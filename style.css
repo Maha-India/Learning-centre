@@ -87,7 +87,7 @@ nav ul li a:hover::after {
 
 .subject-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300 px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(333px, 1fr));
     gap: 1em;
     padding: 2em;
 }
