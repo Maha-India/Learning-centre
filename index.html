@@ -19,20 +19,11 @@
     <meta name="twitter:title" content="Tripti Tution Centre - High-Quality Tuition for Various Subjects">
     <meta name="twitter:description" content="Tripti Tution Centre offers high-quality tuition for Mathematics, Statistics, Commerce, Business Studies, Economics, Hindi, and English. Join us to excel in your academics.">
     <meta name="twitter:image" content="logo.jpg">
-    <script>
-        function showNumber(event){
-            var isDesktop=/Mobi|Android/i.test(navigator.userAgent);
-            if(isDesktop){
-                alert('Please call us at +91 7003315263');
-                event.preventDefault();
-            }
-        }
-    </script>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="/logo.jpg" alt="Tripti Tution Centre Logo">
+            <img src="/logo3.jpg" alt="Tripti Tution Centre Logo">
         </div>
         <div class="brand">
             TRIPTI TUTION CENTRE
@@ -100,7 +91,7 @@
         <form action="https://formcarry.com/s/h3DNfb5FAjO" method="POST" enctype="multipart/form-data">
             <label>
                 Your name:
-                <input type="text" name="name" placeholder="Your Name">
+                <input type="text" name="name" placeholder="John Doe">
             </label>
             <label>
                 Your phone number:
@@ -115,7 +106,7 @@
                 <textarea name="message" placeholder="Your Message"></textarea>
             </label>
             <button type="submit">Send</button>
-            <a href="tel:+917003315263" onclick="showNumber(event);">Or Call Us</a>
+            <a onclick="handleContactClick(event)">Or Call Us</a>
         </form>
     </section>
 
@@ -125,5 +116,21 @@
             Designed by - <a href="https://mahaindia.netlify.app">Maha India</a>
         </aside>
     </footer>
+    <script>
+        function handleContactClick(event) {
+            event.preventDefault(); // Prevent default link behavior
+
+            // Check if the device is likely to be a desktop
+            var isDesktop = !/Mobi|Android/i.test(navigator.userAgent);
+
+            if (isDesktop) {
+                // Show the number in an alert if it's a desktop
+                alert('We could not detect a dialer on your device\nplease call us at +91 7003315263');
+            } else {
+                // Redirect to the dialer with the phone number
+                window.location.href = 'tel:+917003315263';
+            }
+        }
+    </script>
 </body>
 </html>
