@@ -220,7 +220,6 @@ footer>aside{
         display: block;
         max-height: 75vh;
         padding-top: 50px;
-        transform: translateY(25%);
     }
     .cover-image {
        display:none;
