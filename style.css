@@ -234,7 +234,8 @@ footer>aside{
        display:none;
     }
     header .logo img{
-        left: calc(50%-50px);
+        display:flex;
+        justify-content:center;
     }
 }
 /* Scrollbar styles for WebKit-based browsers */
