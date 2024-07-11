@@ -62,13 +62,19 @@ nav ul li a:hover::after {
 }
 
 .cover-image {
-    width: 100%;
+    width: 50%;
     height: auto;
-    display: block;
-    max-height: 70vh;
+    display: inline-block;
+    max-height: 75vh;
     object-fit: cover;
 }
-
+.about-content{
+    width: 45%;
+    height: auto;
+    display: inline-block;
+    max-height: 75vh;
+    transform:translateY(-25%);
+}
 #about h1 {
     margin-top: 1em;
     font-size: 2.5em;
@@ -207,6 +213,17 @@ footer>aside{
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         gap: 1em;
         padding: 2em;
+    }
+    .about-content{
+        width: auto;
+        height: auto;
+        display: block;
+        max-height: 75vh;
+        padding-top: 50px;
+        transform: translateY(25%);
+    }
+    .cover-image {
+       display:none;
     }
 }
 /* Scrollbar styles for WebKit-based browsers */
