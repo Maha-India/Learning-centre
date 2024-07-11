@@ -237,6 +237,26 @@ footer>aside{
         display:flex;
         justify-content:center;
     }
+    nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: none;
+}
+
+nav ul li a {
+    display:none;
+}
+
+nav ul li a::after {
+    display:none;
+}
 }
 /* Scrollbar styles for WebKit-based browsers */
 ::-webkit-scrollbar {
