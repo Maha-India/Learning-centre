@@ -238,6 +238,12 @@ footer>aside{
         justify-content:center;
         align-items: center;
     }
+    .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+    
     nav ul {
     list-style-type: none;
     margin: 0;
