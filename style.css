@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Algerian';
+    src: url('/Algerian Regular.ttf') format('truetype');
+    /* Add other formats if available */
+    font-weight: normal;
+    font-style: normal;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
