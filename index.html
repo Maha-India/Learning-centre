@@ -1,262 +1,141 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tripti Tution Centre - High-Quality Tuition for Various Subjects</title>
+    <meta name="description" content="Tripti Tution Centre offers high-quality tuition for Mathematics, Statistics, Commerce, Business Studies, Economics, Hindi, and English. Join us to excel in your academics.">
+    <meta name="keywords" content="tuition, education, Mathematics, Statistics, Commerce, Business Studies, Economics, Hindi, English">
+    <meta name="author" content="Tripti Tution Centre">
+    <link rel="stylesheet" href="style.css">
+    <link rel="canonical" href="https://www.tripti.netlify.app/index.html">
+    <link rel="icon" href="/faviconnn.png">
+    <!--Open Graph Meta Tags-->
+    <meta property="og:title" content="Tripti Tution Centre - High-Quality Tuition for Various Subjects">
+    <meta property="og:description" content="Tripti Tution Centre offers high-quality tuition for Mathematics, Statistics, Commerce, Business Studies, Economics, Hindi, and English. Join us to excel in your academics.">
+    <meta property="og:image" content="logo6.png">
+    <meta property="og:url" content="https://www.tripti.netlify.app">
+    <meta property="og:type" content="website">
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tripti Tution Centre - High-Quality Tuition for Various Subjects">
+    <meta name="twitter:description" content="Tripti Tution Centre offers high-quality tuition for Mathematics, Statistics, Commerce, Business Studies, Economics, Hindi, and English. Join us to excel in your academics.">
+    <meta name="twitter:image" content="logo.jpg">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/logo8.png" alt="Tripti Tution Centre Logo">
+        </div>
+        <div class="brand" style="text-align:center;color:rgba(232,190,91,1);">
+            <font style="font-family: algerian;font-size: xx-large;">TRIPTI TUTION CENTRE</font><br><font style="font: caption;font-family: courier prime;">FOR ACADEMIC BRILLIANCE</font>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#subjects">Subjects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-header {
-    background-color: #040E29;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 1em;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-header .logo img {
-    max-height: 100px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 1em;
-    flex-wrap: wrap;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 0.25em;
-    position: relative;
-}
-
-nav ul li a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 3px; /* Thickness of the underline */
-    width: calc(100% - 0.5em); /* Leave space for the last letter */
-    background-color: white;
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-    transform-origin: left;
-}
-
-nav ul li a:hover::after {
-    transform: scaleX(1);
-}
-
-
-#about {
-    text-align: center;
-    padding: 2em 1em;
-}
-
-.cover-image {
-    width: 50%;
-    height: auto;
-    display: inline-block;
-    max-height: 75vh;
-    object-fit: cover;
-}
-.about-content{
-    width: 45%;
-    height: auto;
-    display: inline-block;
-    max-height: 75vh;
-    transform:translateY(-25%);
-}
-#about h1 {
-    margin-top: 1em;
-    font-size: 2.5em;
-}
-
-#about p {
-    font-size: 1.2em;
-    color: #555;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-#subjects {
-    background-color: #eef;
-}
-
-.subject-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(333px, 1fr));
-    gap: 1em;
-    padding: 2em;
-}
-
-.subject-tile {
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    text-align: center;
-}
-
-.subject-tile img {
-    width: 100%;
-    height: auto;
-}
-
-.subject-tile h3 {
-    margin: 0;
-    padding: 1em 0.5em;
-    background-color: #040E29;
-    color: white;
-}
-
-.subject-tile p {
-    padding: 0.5em 1em;
-    font-size: 1em;
-    color: #333;
-}
-
-#contact {
-    padding: 2em 1em;
-    text-align: center;
-}
-
-#contact h2 {
-    margin-bottom: 1em;
-}
-
-#contact form {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-#contact label {
-    display: block;
-    margin-bottom: 0.5em;
-    font-weight: bold;
-}
-
-#contact input, #contact textarea {
-    width: 100%;
-    padding: 0.5em;
-    margin-bottom: 1em;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-#contact button {
-    padding: 0.75em 1.5em;
-    border: none;
-    background-color: #040E29;
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-#contact button:hover {
-    background-color: #333;
-}
-
-form>a {
-    padding: 0.57em 1.5em;
-    border: none;
-    background-color: #040E29;
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-form>a:hover {
-    background-color: #333;
-    text-decoration: none;
-}
-
-footer {
-    background-color: #040E29;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-}
-footer>aside{
-    text-align: left;
-    padding-left: 10px;
-    padding-bottom: 5px;
-    font-size: small;
-    background-color: #040E29;
-}footer>aside>a{
-    text-decoration-color: white;
-    color: White;
-}
-
-@media (max-width: 600px) {
-    #about h1 {
-        font-size: 2em;
-    }
+    <section id="about">
+        <img src="images/cover.jpg" alt="Cover Image" class="cover-image" id="cover">
+        <div class="about-content">
+            <h1>Welcome to Tripti Tution Centre</h1>
+            <h2 style="color:navy;font-style: italic;font-family: 'Courier New', Courier, monospace;">Where Learning Takes The First Bench</h2>
+            <p>We provide high-quality tuition for Mathematics, English, Hindi, Economics, Commerce, BST for classes 4 to 10. Our experienced teachers are dedicated to help students achieve academic excellence.</p>
+        </div>
+    </section>
     
-    #about p {
-        font-size: 1em;
-    }
-    .subject-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        gap: 1em;
-        padding: 2em;
-    }
-    .about-content{
-        width: auto;
-        height: auto;
-        display: block;
-        max-height: 75vh;
-        padding-top: 50px;
-        transform: translateY(25%);
-    }
-    .cover-image {
-       display:none;
-    }
-}
-/* Scrollbar styles for WebKit-based browsers */
-::-webkit-scrollbar {
-    width: 5px;
-}
 
-::-webkit-scrollbar-track {
-    background: transparent;
-}
+    <section id="subjects">
+        <h2>Subjects We Teach</h2>
+        <div class="subject-grid">
+            <article class="subject-tile">
+                <img src="images/mathematics.jpg" alt="Mathematics" height="160px" width="314px">
+                <h3>Mathematics</h3>
+                <p>Understand the fundamentals of mathematics, from algebra to calculus. Essential for problem-solving and analytical skills.</p>
+            </article>
+            <article class="subject-tile">
+                <img src="images/english.jpg" alt="English" height="160px" width="314px">
+                <h3>English</h3>
+                <p>Enhance your English language skills in reading, writing, and comprehension. Essential for academic and professional success.</p>
+            </article>
+            <article class="subject-tile">
+                <img src="images/hindi.jpg" alt="Hindi" height="160px" width="314px">
+                <h3>Hindi</h3>
+                <p>Improve your proficiency in Hindi language, including grammar and literature. Important for cultural and professional communication.</p>
+            </article>
+            <article class="subject-tile">
+                <img src="images/economics.jpg" alt="Economics" height="160px" width="314px">
+                <h3>Economics</h3>
+                <p>Understand economic principles and how they affect global and local markets. Important for policy makers and analysts.</p>
+            </article>
+            <!--article class="subject-tile">
+                <img src="images/statistics.jpg" alt="Statistics" height="160px" width="314 px">
+                <h3>Statistics</h3>
+                <p>Learn how to collect, analyze, and interpret data. Crucial for research, business, and everyday decision-making.</p>
+            </article-->
+            <article class="subject-tile">
+                <img src="images/commerce.jpg" alt="Commerce" height="160px" width="314px">
+                <h3>Commerce</h3>
+                <p>Explore the world of trade, business activities, and market dynamics. Key for future business leaders and entrepreneurs.</p>
+            </article>
+            <article class="subject-tile">
+                <img src="images/bst.jpg" alt="Business Studies" height="160px" width="314px">
+                <h3>Business Studies</h3>
+                <p>Gain insights into the management, organization, and operation of businesses. Vital for aspiring managers and businessmen.</p>
+            </article>
+        </div>
+    </section>
 
-::-webkit-scrollbar-thumb {
-    background-color: #040E29;
-    border-radius: 10px;
-    border: 0; /* Add padding to achieve rounded ends */
-}
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <!-- modify this form HTML as you wish and place wherever you want your form -->
+        <form action="https://formcarry.com/s/h3DNfb5FAjO" method="POST" enctype="multipart/form-data">
+            <label>
+                Your name:
+                <input type="text" name="name" placeholder="Your Name">
+            </label>
+            <label>
+                Your phone number:
+                <input type="tel" name="phone" placeholder="+91 **********">
+            </label>
+            <label>
+                Your email:
+                <input type="email" name="email" placeholder="youremail@gmail.com">
+            </label>
+            <label>
+                Your message:
+                <textarea name="message" placeholder="Your Message"></textarea>
+            </label>
+            <button type="submit">Send</button>
+            <a onclick="handleContactClick(event)">Or Call Us</a>
+        </form>
+    </section>
 
-::-webkit-scrollbar-thumb:hover {
-    background-color: #333; /* Slightly lighter on hover for a visual effect */
-}
+    <footer>
+        <p>&copy; 2024 Tripti Tution Centre. All rights reserved.</p>
+        <aside>
+            Designed by - <a href="https://mahaindia.netlify.app">Maha India</a>
+        </aside>
+    </footer>
+    <script>
+        function handleContactClick(event) {
+            event.preventDefault(); // Prevent default link behavior
 
-/* Scrollbar styles for Firefox */
-* {
-    scrollbar-width: 5px;
-    scrollbar-color: #040E29 transparent;
-}
+            // Check if the device is likely to be a desktop
+            var isDesktop = !/Mobi|Android/i.test(navigator.userAgent);
 
-/* Optional: Scrollbar styling for Edge */
-.scrollbar {
-    scrollbar-face-color: #040E29;
-    scrollbar-track-color: transparent;
-    scrollbar-3dlight-color: transparent;
-    scrollbar-highlight-color: transparent;
-    scrollbar-shadow-color: transparent;
-    scrollbar-darkshadow-color: transparent;
-}
+            if (isDesktop) {
+                // Show the number in an alert if it's a desktop
+                alert('We could not detect a dialer on your device\nplease call us at +91 7003315263');
+            } else {
+                // Redirect to the dialer with the phone number
+                window.location.href = 'tel:+917003315263';
+            }
+        }
+    </script>
+</body>
+</html>
