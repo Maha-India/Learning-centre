@@ -62,7 +62,9 @@ nav ul li a:hover::after {
     transform: scaleX(1);
 }
 
-
+#brand-name{
+    font-family:'Algerian',serif;
+}
 #about {
     text-align: center;
     padding: 2em 1em;
