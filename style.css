@@ -233,7 +233,7 @@ footer>aside{
     .about-content::after {
     content: "";
     clear: both;
-    display: table;
+    display: block;
     }
     .cover-image {
        display:none;
@@ -246,7 +246,7 @@ footer>aside{
     .clearfix::after {
     content: "";
     clear: both;
-    display: table;
+    display: block;
     }
     
     nav ul {
