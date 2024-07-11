@@ -234,6 +234,7 @@ footer>aside{
     content: "";
     clear: both;
     display: block;
+    width: auto;
     }
     .cover-image {
        display:none;
