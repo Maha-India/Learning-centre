@@ -233,6 +233,9 @@ footer>aside{
     .cover-image {
        display:none;
     }
+    header .logo{
+        text-align:center;
+    }
 }
 /* Scrollbar styles for WebKit-based browsers */
 ::-webkit-scrollbar {
