@@ -223,12 +223,17 @@ footer>aside{
         gap: 1em;
         padding: 2em;
     }
-    .about-content{
+    /*.about-content{
         width: auto;
         height: auto;
         display: block;
         max-height: 75vh;
         padding-top: 50px;
+    }*/
+    .about-content::after {
+    content: "";
+    clear: both;
+    display: table;
     }
     .cover-image {
        display:none;
