@@ -1,4 +1,14 @@
 // Initialize Firebase
+const firebaseConfig = {
+    apiKey: "AIzaSyCCfTiC7rlmqQp1ZB07uTj5ra6giiYanto",
+    authDomain: "tripti-tution.firebaseapp.com",
+    databaseURL: "https://tripti-tution-default-rtdb.asia-southeast1.firebasedatabase.app/",
+    projectId: "tripti-tution",
+    storageBucket: "tripti-tution.appspot.com",
+    messagingSenderId: "521198073840",
+    appId: "1:521198073840:web:45e721c99dfaa8ecee8f35",
+    measurementId: "G-8ZP4M7RJ1Q"
+};
 firebase.initializeApp(firebaseConfig);
 const database = firebase.database();
 const auth = firebase.auth();
