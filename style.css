@@ -96,6 +96,33 @@ nav ul li a:hover::after {
     margin: 0 auto;
 }
 
+#notices-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#notices-container h2 {
+    text-align: center;
+}
+
+#notices-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#notices-list li {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+
 #subjects {
     background-color: #eef;
 }
