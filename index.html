@@ -22,8 +22,13 @@
     <meta name="twitter:description" content="Tripti Tution Centre offers high-quality tuition for Mathematics, Statistics, Commerce, Business Studies, Economics, Hindi, and English. Join us to excel in your academics.">
     <meta name="twitter:image" content="logo.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- Add Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -51,6 +56,13 @@
         </div>
     </section>
     
+    <div id="notices-container">
+        <h2>Notices</h2>
+        <ul id="notices-list"></ul>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"></script>
+    <script src="notices.js"></script>
 
     <section id="subjects">
         <h2>Subjects We Teach</h2>
