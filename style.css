@@ -339,11 +339,12 @@ footer>aside{
     max-height:0px;
     }
     .cover-image {
-    width: 90vw;
+    /*width: 90vw;
     height: auto;
     display: block;
     max-height: 50vh;
-    object-fit: cover;
+    object-fit: cover;*/
+    display:none;
     }
     header .logo img{
         display:flex;
