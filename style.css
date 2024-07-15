@@ -374,6 +374,20 @@ nav ul li a::after {
 header .logo img {
     max-height: 50px;
 }
+header {
+    background-color: #040E29;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    align-items: left;
+    flex-wrap: wrap;
+	
+}
+#brand-name{
+    font-family:'Algerian',serif;
+	font-size:x-large;
+}
 }
 /* Scrollbar styles for WebKit-based browsers */
 ::-webkit-scrollbar {
