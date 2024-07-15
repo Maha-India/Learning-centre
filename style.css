@@ -1,0 +1,402 @@
+@font-face {
+    font-family: 'Algerian';
+    src: url('/Algerian Regular.ttf') format('truetype');
+    /* Add other formats if available */
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #040E29;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header .logo img {
+    max-height: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.25em;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px; /* Thickness of the underline */
+    width: calc(100% - 0.5em); /* Leave space for the last letter */
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: left;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+#brand-name{
+    font-family:'Algerian',serif;
+}
+#about {
+    text-align: center;
+    padding: 2em 1em;
+}
+
+.cover-image {
+    width: 50%;
+    height: auto;
+    display: inline-block;
+    max-height: 75vh;
+    object-fit: cover;
+}
+.about-content{
+    width: 45%;
+    height: auto;
+    display: inline-block;
+    max-height: 75vh;
+    transform:translateY(-25%);
+}
+#about h1 {
+    margin-top: 1em;
+    font-size: 2.5em;
+}
+
+#about p {
+    font-size: 1.2em;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#notices-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#notices-container h2 {
+    text-align: center;
+    color:#000000;
+	line-height:inherit;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	height: 35px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+#notice-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#notice-list li {
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#notice-list li a{
+    color: aqua;
+	margin-bottom: 5px;
+	text-decoration: none;
+}
+
+#notice-list hr{
+    border-top: 1px dashed black;
+}
+
+marquee{
+	margin-bottom: 5px;
+	height: 2in;
+}
+
+#notice-list li a:hover{
+	color:orangered;
+}
+
+ /* .Notice{
+	position: absolute;
+	top: 4in ;
+	right: 1in;
+	display: inline-block;
+	//border: 2px solid rgb(0, 0, 255);
+	border-radius: 10px;
+	width:3.25in;
+	height: 2.5in;
+	color: #000000;
+	background: #fae9d5;
+}
+.ul-marq>li>a{
+	color: aqua;
+	margin-bottom: 5px;
+	text-decoration: none;
+}
+.ul-marq>li>a:hover{
+	color:orangered;
+}
+.ul-marq>hr{
+	border-top: 1px dashed black;
+}
+marquee{
+	margin-bottom: 5px;
+	height: 2in;
+}
+.Notice-scroll{
+	height: 2in;
+	padding-inline: 20px ;
+}
+#Notice-text{
+	color:#000000;
+	background: rgb(0, 60, 139);
+	line-height:inherit;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	height: 35px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+} */
+
+#subjects {
+    background-color: #eef;
+}
+
+.subject-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(333px, 1fr));
+    gap: 1em;
+    padding: 2em;
+}
+
+.subject-tile {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.subject-tile img {
+    width: 100%;
+    height: auto;
+}
+
+.subject-tile h3 {
+    margin: 0;
+    padding: 1em 0.5em;
+    background-color: #040E29;
+    color: white;
+}
+
+.subject-tile p {
+    padding: 0.5em 1em;
+    font-size: 1em;
+    color: #333;
+}
+
+#contact {
+    padding: 2em 1em;
+    text-align: center;
+}
+
+#contact h2 {
+    margin-bottom: 1em;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#contact button {
+    padding: 0.75em 1.5em;
+    border: none;
+    background-color: #040E29;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #333;
+}
+
+form>a {
+    padding: 0.57em 1.5em;
+    border: none;
+    background-color: #040E29;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+form>a:hover {
+    background-color: #333;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #040E29;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+footer>aside{
+    text-align: left;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    font-size: small;
+    background-color: #040E29;
+}footer>aside>a{
+    text-decoration-color: white;
+    color: White;
+}
+
+@media (max-width: 600px) {
+    #about h1 {
+        font-size: 2em;
+    }
+    
+    #about p {
+        font-size: 1em;
+    }
+    .subject-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1em;
+        padding: 2em;
+    }
+    .about-content{
+        width: auto;
+        height: auto;
+        display: block;
+        max-height: 75vh;
+        padding-top: 50px;
+    }
+    .about-content::after {
+    content: "";
+    clear: both;
+    width: auto;
+    height: auto;
+    display: block;
+    max-height: 75vh;
+    padding-top: 50px;
+    }
+    .cover-image {
+       display:none;
+    }
+    header .logo img{
+        display:flex;
+        justify-content:center;
+        align-items: center;
+    }
+    .clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+    }
+    
+    nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: none;
+}
+
+nav ul li a {
+    display:none;
+}
+
+nav ul li a::after {
+    display:none;
+}
+}
+/* Scrollbar styles for WebKit-based browsers */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #040E29;
+    border-radius: 10px;
+    border: 0; /* Add padding to achieve rounded ends */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #333; /* Slightly lighter on hover for a visual effect */
+}
+
+/* Scrollbar styles for Firefox */
+* {
+    scrollbar-width: 5px;
+    scrollbar-color: #040E29 transparent;
+}
+
+/* Optional: Scrollbar styling for Edge */
+.scrollbar {
+    scrollbar-face-color: #040E29;
+    scrollbar-track-color: transparent;
+    scrollbar-3dlight-color: transparent;
+    scrollbar-highlight-color: transparent;
+    scrollbar-shadow-color: transparent;
+    scrollbar-darkshadow-color: transparent;
+}
