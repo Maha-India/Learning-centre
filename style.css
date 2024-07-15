@@ -337,6 +337,7 @@ footer>aside{
     display: block;
     max-height: 75vh;
     padding-top: 50px;
+    transform:translateY(0%)
     }
     .cover-image {
     width: 90vw;
@@ -383,7 +384,7 @@ header {
     background-color: #040E29;
     color: white;
     display: flex;
-    padding: 1em;
+    padding: 0.5em;
     align-items: left;
     flex-wrap: wrap;
 	
@@ -396,21 +397,7 @@ header {
     text-align: center;
     padding: 2em 1em;
 }
-.cover-image {
-    display:none;
-}
-.about-content{
-    width: 90vw;
-    height: auto;
-    display: block;
-    max-height: 70vh;
-}
-
-.about-content ::after{
-    height:0px;
-    display:none;
-}
-
+	
 #about h1 {
     margin-top: 1em;
     font-size: 2em;
