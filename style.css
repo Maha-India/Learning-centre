@@ -64,6 +64,7 @@ nav ul li a:hover::after {
 
 #brand-name{
     font-family:'Algerian',serif;
+    font-size:xx-large;
 }
 #about {
     text-align: center;
@@ -372,7 +373,7 @@ nav ul li a::after {
     display:none;
 }
 header .logo img {
-    max-height: 50px;
+    max-height: 70px;
 }
 header {
     background-color: #040E29;
