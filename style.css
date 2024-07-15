@@ -328,6 +328,7 @@ footer>aside{
         display: block;
         max-height: 75vh;
         padding-top: 50px;
+	transform:translateY(0%)
     }
     .about-content::after {
     content: "";
@@ -335,9 +336,7 @@ footer>aside{
     width: auto;
     height: auto;
     display: block;
-    max-height: 75vh;
-    padding-top: 50px;
-    transform:translateY(0%)
+    max-height:0px;
     }
     .cover-image {
     width: 90vw;
