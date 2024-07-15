@@ -128,7 +128,7 @@ nav ul li a:hover::after {
 }
 
 #notice-list li a{
-    color: aqua;
+    color: orangered;
 	margin-bottom: 5px;
 	text-decoration: none;
 }
@@ -143,7 +143,7 @@ marquee{
 }
 
 #notice-list li a:hover{
-	color:orangered;
+	color:red;
 }
 
  /* .Notice{
