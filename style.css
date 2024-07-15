@@ -339,7 +339,11 @@ footer>aside{
     padding-top: 50px;
     }
     .cover-image {
-       display:none;
+    width: 90vw;
+    height: auto;
+    display: block;
+    max-height: 50vh;
+    object-fit: cover;
     }
     header .logo img{
         display:flex;
@@ -379,7 +383,7 @@ header {
     background-color: #040E29;
     color: white;
     display: flex;
-    padding: 0em;
+    padding: 1em;
     align-items: left;
     flex-wrap: wrap;
 	
