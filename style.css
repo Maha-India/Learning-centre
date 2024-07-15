@@ -338,6 +338,14 @@ footer>aside{
     display: block;
     max-height:0px;
     }
+    .about-content::before {
+    content: "";
+    clear: both;
+    width: auto;
+    height: auto;
+    display: block;
+    max-height:0px;
+    }
     .cover-image {
     /*width: 90vw;
     height: auto;
@@ -352,6 +360,11 @@ footer>aside{
         align-items: center;
     }
     .clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+    }
+    .clearfix::before {
     content: "";
     clear: both;
     display: block;
