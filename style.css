@@ -371,6 +371,9 @@ nav ul li a {
 nav ul li a::after {
     display:none;
 }
+header .logo img {
+    max-height: 50px;
+}
 }
 /* Scrollbar styles for WebKit-based browsers */
 ::-webkit-scrollbar {
