@@ -378,15 +378,44 @@ header {
     background-color: #040E29;
     color: white;
     display: flex;
-    justify-content: space-between;
-    padding: 1em;
+    padding: 0em;
     align-items: left;
     flex-wrap: wrap;
 	
 }
 #brand-name{
     font-family:'Algerian',serif;
-	font-size:x-large;
+	font-size:small;
+}
+#about {
+    text-align: center;
+    padding: 2em 1em;
+}
+.cover-image {
+    display:none;
+}
+.about-content{
+    width: 90vw;
+    height: auto;
+    display: block;
+    max-height: 70vh;
+}
+
+.about-content ::after{
+    height:0px;
+    display:none;
+}
+
+#about h1 {
+    margin-top: 1em;
+    font-size: 2em;
+}
+
+#about p {
+    font-size: 1em;
+    color: #555;
+    max-width: 95%;
+    margin: 0px;
 }
 }
 /* Scrollbar styles for WebKit-based browsers */
