@@ -68,14 +68,13 @@ nav ul li a:hover::after {
 }
 #about {
     text-align: center;
-    padding: 0em;
+    padding:2em 1em;
 }
 
 .cover-image {
     width: 50%;
     height: auto;
     display: inline-block;
-    padding:2em 1em;
     max-height: 75vh;
     object-fit: cover;
 }
@@ -83,7 +82,6 @@ nav ul li a:hover::after {
     width: 45%;
     height: auto;
     display: inline-block;
-    padding: 2em 1em;
     max-height: 75vh;
     transform:translateY(-25%);
 }
