@@ -3,214 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tripti Tution Centre - High-Quality Tuition for Various Subjects</title>
-    <meta name="description" content="Looking for top-notch tuition services in Dumdum, Kolkata? Tripti Tuition Centre offers personalized coaching for Mathematics, English, Hindi, Economics, Commerce and Business Studies. Join us to excel in your academics.">
-    <meta name="keywords" content="tuition, education, Mathematics, Statistics, Commerce, Business Studies, Economics, Hindi, English">
-    <meta name="author" content="Tripti Tution Centre">
-    <link rel="stylesheet" href="style.css">
-    <link rel="canonical" href="https://www.tripti.netlify.app/index.html">
-    <link rel="icon" href="/faviconnn.png">
-    <!--Open Graph Meta Tags-->
-    <meta property="og:title" content="Tripti Tution Centre - High-Quality Tuition for Various Subjects">
-    <meta property="og:description" content="Tripti Tution Centre offers high-quality tuition for Mathematics, Statistics, Commerce, Business Studies, Economics, Hindi, and English. Join us to excel in your academics.">
-    <meta property="og:image" content="https://triptiedu.netlify.app/logo13.png">
-    <meta property="og:url" content="https://www.tripti.netlify.app">
-    <meta property="og:type" content="website">
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Tripti Tution Centre">
-    <meta name="twitter:description" content="Looking for top-notch tuition services in Dumdum, Kolkata? Tripti Tuition Centre offers personalized coaching for Mathematics, English, Hindi, Economics, Commerce and Business Studies. Join us to excel in your academics.">
-    <meta name="twitter:image" content="https://triptiedu.netlify.app/logo13.png">
-    <meta property="og:locale" content="en_IN">
-    <meta name="geo.placename" content="Dumdum, Kolkata">
-    <meta name="geo.region" content="IN-WB">
-    <meta name="geo.position" content="22.6442625, 88.4226719">
-    <meta name="ICBM" content="22.6442625, 88.4226719">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <script src="https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js"></script>
-    <!-- Add additional services that you want to use -->
-    <script src="https://www.gstatic.com/firebasejs/10.12.3/firebase-database.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js"></script>
-    <script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-analytics.js";
-  import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-database.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyCCfTiC7rlmqQp1ZB07uTj5ra6giiYanto",
-    authDomain: "tripti-tution.firebaseapp.com",
-    databaseURL: "https://tripti-tution-default-rtdb.asia-southeast1.firebasedatabase.app",
-    projectId: "tripti-tution",
-    storageBucket: "tripti-tution.appspot.com",
-    messagingSenderId: "521198073840",
-    appId: "1:521198073840:web:45e721c99dfaa8ecee8f35",
-    measurementId: "G-8ZP4M7RJ1Q"
-  };
-
-  // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
-    const db = getDatabase();
-        // Fetch notices from Firebase RTDB
-        document.addEventListener('DOMContentLoaded', function() {
-            const noticesList = document.getElementById('notice-list');
-            const noticesContainer = document.getElementById('notices-container');
-            const noticeref = ref(db, 'notices');
-            onValue(noticeref, (snapshot) => {
-                noticesList.innerHTML = ''; // Clear existing notices
-                let hasNotices = false;
-                snapshot.forEach((childSnapshot) => {
-                    hasNotices = true;
-                    const notice = childSnapshot.val();
-            const hr = document.createElement('hr');
-            const li = document.createElement('li');
-            const a = document.createElement('a');
-            a.href = "#";
-            a.textContent = notice;
-            li.appendChild(a);
-            noticesList.appendChild(hr);
-            noticesList.appendChild(li);
-                });
-                 if (hasNotices) {
-            noticesContainer.style.display = 'block';
-        } else {
-            noticesContainer.style.display = 'none';
+    <title>Tripti Tuition Centre - Under Maintenance</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #4b6cb7, #182848);
+            color: white;
+            text-align: center;
         }
-            });
-        });
-    </script>
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .loader {
+            border: 6px solid #f3f3f3;
+            border-top: 6px solid #3498db;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .contact {
+            margin-top: 20px;
+            font-size: 1em;
+        }
+        .contact a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="/logo13.png" alt="Tripti Tution Centre Logo">
-        </div>
-        <div class="brand" style="text-align:center;color:rgba(232,190,91,1);">
-            <font id="brand-name" style="font-family: algerian;">TRIPTI TUTION CENTRE</font><br><font style="font: caption;font-family: courier prime;">FOR ACADEMIC BRILLIANCE</font>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#subjects">Subjects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="about">
-        <img src="images/cover.jpg" alt="Cover Image" class="cover-image" id="cover">
-        <div class="about-content">
-            <h1><U></U>Welcome</U></h1>
-            <h2 style="color:navy;font-style: italic;font-family: 'Courier New', Courier, monospace;">Here Learning Takes The First Bench</h2>
-            <p>We provide high-quality tuition for Mathematics, English, Hindi, Economics, Commerce, BST for classes 4 to 10. Our experienced teachers are dedicated to help students achieve academic excellence.</p>
-        </div>
-    </section>
-    
-    <div id="notices-container">
-        <h2>Notices</h2>
-        <marquee height="150" width="100%" behavior="scroll" start="50%" direction="up" scrollamount="5" onmouseover="this.stop();" onmouseout="this.start();">
-        <ul id="notice-list"></ul><hr style="border-top: 1px dashed black;">
-        </marquee>
+    <div class="container">
+        <h1>We're Under Maintenance</h1>
+        <p>Our website is currently undergoing scheduled maintenance. Thank you for your patience.</p>
+        <div class="loader"></div>
     </div>
-
-    <!--script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"></script>
-    <script src="notice.js"></script-->
-
-    <section id="subjects">
-        <h2>Subjects We Teach</h2>
-        <div class="subject-grid">
-            <article class="subject-tile">
-                <img src="images/mathematics.jpg" alt="Mathematics" height="160px" width="314px">
-                <h3>Mathematics</h3>
-                <p>Understand the fundamentals of mathematics, from algebra to calculus. Essential for problem-solving and analytical skills.</p>
-            </article>
-            <article class="subject-tile">
-                <img src="images/english.jpg" alt="English" height="160px" width="314px">
-                <h3>English</h3>
-                <p>Enhance your English language skills in reading, writing, and comprehension. Essential for academic and professional success.</p>
-            </article>
-            <article class="subject-tile">
-                <img src="images/hindi.jpg" alt="Hindi" height="160px" width="314px">
-                <h3>Hindi</h3>
-                <p>Improve your proficiency in Hindi language, including grammar and literature. Important for cultural and professional communication.</p>
-            </article>
-            <article class="subject-tile">
-                <img src="images/economics.jpg" alt="Economics" height="160px" width="314px">
-                <h3>Economics</h3>
-                <p>Understand economic principles and how they affect global and local markets. Important for policy makers and analysts.</p>
-            </article>
-            <!--article class="subject-tile">
-                <img src="images/statistics.jpg" alt="Statistics" height="160px" width="314 px">
-                <h3>Statistics</h3>
-                <p>Learn how to collect, analyze, and interpret data. Crucial for research, business, and everyday decision-making.</p>
-            </article-->
-            <article class="subject-tile">
-                <img src="images/commerce.jpg" alt="Commerce" height="160px" width="314px">
-                <h3>Commerce</h3>
-                <p>Explore the world of trade, business activities, and market dynamics. Key for future business leaders and entrepreneurs.</p>
-            </article>
-            <article class="subject-tile">
-                <img src="images/bst.jpg" alt="Business Studies" height="160px" width="314px">
-                <h3>Business Studies</h3>
-                <p>Gain insights into the management, organization, and operation of businesses. Vital for aspiring managers and businessmen.</p>
-            </article>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <!-- modify this form HTML as you wish and place wherever you want your form -->
-        <form action="https://formcarry.com/s/cBItkxe4bBW" method="POST" enctype="multipart/form-data">
-            <label>
-                Your name:
-                <input type="text" name="name" placeholder="Your Name">
-            </label>
-            <label>
-                Your phone number:
-                <input type="tel" name="phone" placeholder="+91 **********">
-            </label>
-            <label>
-                Your email:
-                <input type="email" name="email" placeholder="youremail@gmail.com">
-            </label>
-            <label>
-                Your message:
-                <textarea name="message" placeholder="Your Message"></textarea>
-            </label>
-            <button type="submit">Send</button>
-            <a onclick="handleContactClick(event)">Or Call Us</a>
-        </form>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Tripti Tution Centre. All rights reserved.</p>
-        <aside>
-            Designed by - <a href="https://mahaindia.netlify.app">Maha India</a>
-        </aside>
-    </footer>
     <script>
-        function handleContactClick(event) {
-            event.preventDefault(); // Prevent default link behavior
-
-            // Check if the device is likely to be a desktop
-            var isDesktop = !/Mobi|Android/i.test(navigator.userAgent);
-
-            if (isDesktop) {
-                // Show the number in an alert if it's a desktop
-                alert('We could not detect a dialer on your device\nplease call us at +91 7003315263');
-            } else {
-                // Redirect to the dialer with the phone number
-                window.location.href = 'tel:+917003315263';
-            }
-        }
+        // You can add any JavaScript here if needed
+        console.log("Under Maintenance Page Loaded");
     </script>
 </body>
 </html>
