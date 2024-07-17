@@ -332,7 +332,7 @@ footer>aside{
         height: auto;
         display: block;
         max-height: 75vh;
-        padding-top: 50px;
+        padding-top: 0px;
 	transform:translateY(0%)
     }
     .about-content::after {
