@@ -353,9 +353,9 @@ footer>aside{
     }
     .cover-image {
     width: 90vw;
-    height: auto;
+    height: 20vh;
     display: block;
-    max-height: 10vh;
+    max-height: 20vh;
     object-fit: cover;
     /*display:none;*/
     }
