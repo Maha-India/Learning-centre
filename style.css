@@ -352,11 +352,14 @@ footer>aside{
     max-height:0px;
     }
     .cover-image {
-    width: 90vw;
+    width: 100vw;
     height: auto;
     display: block;
     max-height: 20vh;
     object-fit: cover;
+    padding: 0px;
+    margin:0px;
+    padding-bottom:10px;
     /*display:none;*/
     }
     header .logo img{
