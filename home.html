@@ -61,6 +61,7 @@
         // Fetch notices from Firebase RTDB
         document.addEventListener('DOMContentLoaded', function() {
             const noticesList = document.getElementById('notice-list');
+            const noticesContainer = document.getElementById('notices-container');
             const noticeref = ref(db, 'notices');
             onValue(noticeref, (snapshot) => {
                 noticesList.innerHTML = ''; // Clear existing notices
