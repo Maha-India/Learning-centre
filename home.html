@@ -64,7 +64,9 @@
             const noticeref = ref(db, 'notices');
             onValue(noticeref, (snapshot) => {
                 noticesList.innerHTML = ''; // Clear existing notices
+                let hasNotices = false;
                 snapshot.forEach((childSnapshot) => {
+                    hasNotices = true;
                     const notice = childSnapshot.val();
             const hr = document.createElement('hr');
             const li = document.createElement('li');
@@ -75,6 +77,11 @@
             noticesList.appendChild(hr);
             noticesList.appendChild(li);
                 });
+                 if (hasNotices) {
+            noticesContainer.style.display = 'block';
+        } else {
+            noticesContainer.style.display = 'none';
+        }
             });
         });
     </script>
