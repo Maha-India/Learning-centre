@@ -352,7 +352,7 @@ footer>aside{
     max-height:0px;
     }
     .cover-image {
-    width: auto;
+    width: 90vw;
     height: auto;
     display: block;
     max-height: 20vh;
