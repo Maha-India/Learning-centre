@@ -104,17 +104,23 @@ window.deleteNotice=function(noticeKey) {
 </head>
 <body>
     <div id="admin-container">
-        <h2>Admin - Manage Notices</h2>
         <div id="login-container">
             <input type="email" id="admin-email" placeholder="Email">
             <input type="password" id="admin-password" placeholder="Password">
             <button id="login-btn">Login</button>
         </div>
+        <h1>Admin Controls</h1>
         <div id="notices-management" style="display:none;">
             <ul id="admin-notices-list"></ul>
             <input type="text" id="new-notice" placeholder="New Notice">
             <button id="add-notice-btn">Add Notice</button>
         </div>
+    <div class="logo-container">
+        <img id="logo" src="/default-logo.png" alt="Current Logo">
+        <button id="update-logo-btn">Change Logo</button>
+    </div>
+    <input type="file" id="logo-upload" accept="image/*" style="display: none;">
+    <div id="status"></div>
     </div>
 </body>
 </html>
