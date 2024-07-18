@@ -3,7 +3,7 @@ body {
 }
 
 #admin-container {
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     background-color: #f4f4f4;
@@ -11,7 +11,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#admin-container h2 {
+#admin-container h1 {
     text-align: center;
 }
 
