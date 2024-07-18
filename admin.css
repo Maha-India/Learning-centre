@@ -51,3 +51,29 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+ .logo-container {
+            position: relative;
+            display: inline-block;
+        }
+        .logo-container img {
+            display: block;
+            max-width: 100%;
+        }
+        .logo-container button {
+            position: absolute;
+            top: 50%;
+            left: 25%;
+            transform: translate(-50%, -50%);
+            display: none;
+            padding: 10px;
+            background-color: rgba(0,0,0,0.5);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .logo-container:hover button {
+            display: block;
+        }
+        #status {
+            margin-top: 10px;
+        }
