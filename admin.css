@@ -51,15 +51,15 @@ body {
     justify-content: space-between;
     align-items: center;
 }
- .logo-container {
+ #logo-management {
             position: relative;
             display: inline-block;
         }
-        .logo-container img {
+        #logo-management img {
             display: block;
             max-width: 100%;
         }
-        .logo-container button {
+        #logo-management button {
             position: absolute;
             top: 50%;
             left: 25%;
@@ -71,7 +71,7 @@ body {
             border: none;
             cursor: pointer;
         }
-        .logo-container:hover button {
+        #logo-management:hover button{
             display: block;
         }
         #status {
