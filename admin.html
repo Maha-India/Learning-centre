@@ -45,6 +45,7 @@
             console.log('Logged in successfully:', userCredential);
             document.getElementById('login-container').style.display = 'none';
             document.getElementById('notices-management').style.display = 'block';
+            document.getElementById('logo-management').style.display = 'block';
             loadNotices();
         })
         .catch((error) => {
@@ -115,12 +116,14 @@ window.deleteNotice=function(noticeKey) {
             <input type="text" id="new-notice" placeholder="New Notice">
             <button id="add-notice-btn">Add Notice</button>
         </div>
+        <div id="logo-managenent" style="display:none;">
     <div class="logo-container">
         <img id="logo" src="/default-logo.png" alt="Current Logo">
         <button id="update-logo-btn">Change Logo</button>
     </div>
     <input type="file" id="logo-upload" accept="image/*" style="display: none;">
     <div id="status"></div>
+        </div>
     </div>
 </body>
 </html>
