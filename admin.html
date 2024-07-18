@@ -45,7 +45,7 @@
             console.log('Logged in successfully:', userCredential);
             document.getElementById('login-container').style.display = 'none';
             document.getElementById('notices-management').style.display = 'block';
-           // document.getElementById('logo-management').style.display = 'block';
+            document.getElementById('logo-management').style.display = 'block';
             loadNotices();
         })
         .catch((error) => {
