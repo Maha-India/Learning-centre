@@ -39,6 +39,48 @@
     document.getElementById('login-btn').addEventListener('click', () => {
     const email = document.getElementById('admin-email').value;
     const password = document.getElementById('admin-password').value;
+        const logoElement = document.getElementById('logo');
+            const logoRef = dbRef(database, 'site/logo');
+            onValue(logoRef, (snapshot) => {
+                const logoUrl = snapshot.val();
+                if (logoUrl) {
+                    logoElement.src = logoUrl;
+                }
+            });
+        });
+
+        // Handle update logo button click
+        document.getElementById('update-logo-btn').addEventListener('click', function() {
+            document.getElementById('logo-upload').click();
+        });
+
+        // Handle file upload
+        document.getElementById('logo-upload').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (!file) {
+                document.getElementById('status').innerText = "No file selected.";
+                return;
+            }
+
+            const storageReference = storageRef(storage, 'logos/' + file.name);
+            const uploadTask = uploadBytesResumable(storageReference, file);
+
+            uploadTask.on('state_changed', 
+                function(snapshot) {
+                    const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+                    document.getElementById('status').innerText = 'Upload is ' + progress + '% done';
+                }, 
+                function(error) {
+                    document.getElementById('status').innerText = 'Upload failed: ' + error.message;
+                },function() {
+                    getDownloadURL(uploadTask.snapshot.ref).then(function(downloadURL) {
+                        const logoDbRef = dbRef(database, 'site/logo');
+                        set(logoDbRef, downloadURL);
+                        document.getElementById('status').innerText = 'Logo updated successfully!';
+                    });
+                }
+            );
+            );
 
     signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
