@@ -40,6 +40,19 @@
     const email = document.getElementById('admin-email').value;
     const password = document.getElementById('admin-password').value;
         const logoElement = document.getElementById('logo');
+    signInWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+            console.log('Logged in successfully:', userCredential);
+            document.getElementById('login-container').style.display = 'none';
+            document.getElementById('notices-management').style.display = 'block';
+            document.getElementById('logo-management').style.display = 'block';
+            loadNotices();
+        })
+        .catch((error) => {
+            console.error('Error logging in:', error);
+            alert('Login failed: ' + error.message); // Show alert with error message
+        });
+});
             const logoRef = dbRef(database, 'site/logo');
             onValue(logoRef, (snapshot) => {
                 const logoUrl = snapshot.val();
@@ -81,20 +94,6 @@
                 }
             );
             );
-
-    signInWithEmailAndPassword(auth, email, password)
-        .then((userCredential) => {
-            console.log('Logged in successfully:', userCredential);
-            document.getElementById('login-container').style.display = 'none';
-            document.getElementById('notices-management').style.display = 'block';
-            document.getElementById('logo-management').style.display = 'block';
-            loadNotices();
-        })
-        .catch((error) => {
-            console.error('Error logging in:', error);
-            alert('Login failed: ' + error.message); // Show alert with error message
-        });
-});
 
 // Load notices for admin
 function loadNotices() {
