@@ -4,16 +4,6 @@
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
   X-XSS-Protection: 1; mode=block
-  Content-Security-Policy: 
-  default-src 'self'; 
-  script-src 'self' 'unsafe-inline' 'unsafe-eval'; 
-  style-src 'self' 'unsafe-inline'; 
-  img-src 'self' data: https:; 
-  font-src 'self' data:; 
-  connect-src 'self'; 
-  frame-src 'none'; 
-  base-uri 'self'; 
-  form-action 'self';
   Referrer-Policy: no-referrer-when-downgrade
   Feature-Policy: camera 'none'; microphone 'none'; geolocation 'none'
   Permissions-Policy: geolocation=(self), microphone=(), camera=()
@@ -22,7 +12,7 @@
 
 /*.html
   Cache-Control: max-age=432000, must-revalidate
-  ETag: "unique-html-etag-value"
+  ETag: "home-page-v1"
   Content-Encoding: gzip
   Content-Type: text/html; charset=UTF-8
 
