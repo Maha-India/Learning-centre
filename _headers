@@ -4,6 +4,7 @@
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
   X-XSS-Protection: 1; mode=block
+  Content-Security-Policy: default-src 'none'; script-src 'none'; style-src 'none'; img-src 'none'; font-src 'none'; connect-src 'none'; frame-src 'none'; base-uri 'none'; form-action 'none';
   Referrer-Policy: no-referrer-when-downgrade
   Feature-Policy: camera 'none'; microphone 'none'; geolocation 'none'
   Permissions-Policy: geolocation=(self), microphone=(), camera=()
