@@ -8,23 +8,23 @@
   Referrer-Policy: no-referrer-when-downgrade
   Feature-Policy: camera 'none'; microphone 'none'; geolocation 'none'
   Permissions-Policy: geolocation=(self), microphone=(), camera=()
-  Content-Encoding: br
+  Content-Encoding: gzip
   Content-Type: text/html; charset=UTF-8
 
 /*.html
   Cache-Control: max-age=432000, must-revalidate
   ETag: "unique-html-etag-value"
-  Content-Encoding: br
+  Content-Encoding: gzip
   Content-Type: text/html; charset=UTF-8
 
 /*.css
   Cache-Control: max-age=31536000, public
-  Content-Encoding: br
+  Content-Encoding: gzip
   Content-Type: text/css; charset=UTF-8
 
 /*.js
   Cache-Control: max-age=31536000, public
-  Content-Encoding: br
+  Content-Encoding: gzip
   Content-Type: application/javascript; charset=UTF-8
 
 /*.png
