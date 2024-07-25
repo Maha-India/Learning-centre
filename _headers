@@ -1,52 +1,10 @@
+/home.html
+  Cache-Control: max-age=3600, must-revalidate
+  ETag: "home-html-v1"
+
+# Wildcard for other HTML files
 /*
   Cache-Control: max-age=31536000, public
-  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
-  X-Content-Type-Options: nosniff
-  X-Frame-Options: DENY
-  X-XSS-Protection: 1; mode=block
-  Content-Security-Policy: default-src 'none'; script-src 'none'; style-src 'none'; img-src 'none'; font-src 'none'; connect-src 'none'; frame-src 'none'; base-uri 'none'; form-action 'none';
-  Referrer-Policy: no-referrer-when-downgrade
-  Feature-Policy: camera 'none'; microphone 'none'; geolocation 'none'
-  Permissions-Policy: geolocation=(self), microphone=(), camera=()
-  Content-Encoding: gzip
-  Content-Type: text/html; charset=UTF-8
 
-/*.html
-  Cache-Control: max-age=432000, must-revalidate
-  ETag: "home-page-v1"
-  Content-Encoding: gzip
-  Content-Type: text/html; charset=UTF-8
-
-/*.css
-  Cache-Control: max-age=31536000, public
-  Content-Encoding: gzip
-  Content-Type: text/css; charset=UTF-8
-
-/*.js
-  Cache-Control: max-age=31536000, public
-  Content-Encoding: gzip
-  Content-Type: application/javascript; charset=UTF-8
-
-/*.png
-  Cache-Control: max-age=31536000, public
-  Content-Type: image/png
-
-/*.jpg
-  Cache-Control: max-age=31536000, public
-  Content-Type: image/jpeg
-
-/*.gif
-  Cache-Control: max-age=31536000, public
-  Content-Type: image/gif
-
-/*.svg
-  Cache-Control: max-age=31536000, public
-  Content-Type: image/svg+xml
-
-/*.pdf
-  Cache-Control: max-age=31536000, public
-  Content-Type: application/pdf
-
-/*.ico
-  Cache-Control: max-age=31536000, public
-  Content-Type: image/x-icon
+/admin.ntml
+  Cache-Control: no-cache
