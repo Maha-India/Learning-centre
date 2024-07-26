@@ -1,6 +1,5 @@
 /home.html
-  Cache-Control: max-age=3600, must-revalidate
-  ETag: "home-html-v1"
+  Cache-Control: no-cache"
 
 # Wildcard for other HTML files
 /*
