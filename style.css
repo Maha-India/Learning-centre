@@ -124,7 +124,7 @@ nav ul li a:hover::after {
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 }
-.marquee {
+#notices-container div {
       display: inline-block;
       white-space: nowrap;
       animation: marquee 10s linear infinite;
