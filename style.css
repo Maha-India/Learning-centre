@@ -129,6 +129,8 @@ nav ul li a:hover::after {
       white-space: nowrap;
       animation: marquee 10s linear infinite;
       position: absolute;
+	margin-bottom: 5px;
+	height: 2in;
     }
 
     #notices-container:hover .marquee {
@@ -164,10 +166,10 @@ nav ul li a:hover::after {
     border-top: 1px dashed black;
 }
 
-marquee{
+/*marquee{
 	margin-bottom: 5px;
 	height: 2in;
-}
+}*/
 
 #notice-list li a:hover{
 	color:red;
