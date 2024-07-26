@@ -124,7 +124,25 @@ nav ul li a:hover::after {
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 }
+.marquee {
+      display: inline-block;
+      white-space: nowrap;
+      animation: marquee 10s linear infinite;
+      position: absolute;
+    }
 
+    #notices-container:hover .marquee {
+      animation-play-state: paused;
+    }
+
+    @keyframes marquee {
+      from {
+        transform: translateX(100%);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+    }
 #notice-list {
     list-style-type: none;
     padding: 0;
