@@ -172,7 +172,7 @@ nav ul li a:hover::after {
 }*/
 
 #notice-list li a:hover{
-	color:red;
+	color:aqua;
 }
 
  /* .Notice{
