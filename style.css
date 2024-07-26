@@ -138,12 +138,8 @@ nav ul li a:hover::after {
     }
 
     @keyframes marquee {
-      from {
-        transform: translateX(100%);
-      }
-      to {
-        transform: translateX(-100%);
-      }
+       0%   { transform: translate(0, 0); }
+    100% { transform: translate(0, -100%); }
     }
 #notice-list {
     list-style-type: none;
