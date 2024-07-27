@@ -112,6 +112,72 @@ nav ul li a:hover::after {
     background-color: #f4f4f4;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* To contain the absolute positioned element */
+    height: 200px; /* Set a fixed height to contain the scrolling content */
+    overflow: hidden; /* Hide overflow to only show the scrolling content */
+}
+
+#notices-container h2 {
+    text-align: center;
+    color: #000000;
+    line-height: inherit;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 35px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+}
+
+#notice-list ul {
+    display: block;
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
+    position: absolute;
+    width: 100%; /* Full width to make it fit the container */
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#notices-container:hover ul {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+@keyframes marquee {
+    0%   { transform: translateY(100%); }
+    100% { transform: translateY(-100%); }
+}
+
+#notice-list li {
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    position: relative; /* Ensure the pseudo-element is positioned correctly */
+}
+
+#notice-list li a {
+    color: orangered;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+#notice-list li:after {
+    content: "";
+    display: block;
+    width: 100%;
+    border-top: 1px dashed black;
+    margin-top: 10px;
+}
+
+/*#notices-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #notices-container h2 {
