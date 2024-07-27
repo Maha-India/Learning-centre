@@ -1,9 +1,0 @@
-/home.html
-  Cache-Control: no-cache"
-
-# Wildcard for other HTML files
-/*
-  Cache-Control: max-age=31536000, public
-
-/admin.html
-  Cache-Control: no-cache
