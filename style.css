@@ -4,6 +4,7 @@
     /* Add other formats if available */
     font-weight: normal;
     font-style: normal;
+	font-display:swap;
 }
 body {
     font-family: Arial, sans-serif;
@@ -129,7 +130,7 @@ nav ul li a:hover::after {
     overflow: hidden;
 }
 
-#notice-list ul {
+#notice-list {
     display: block;
     white-space: nowrap;
     animation: marquee 10s linear infinite;
