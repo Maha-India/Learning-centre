@@ -84,10 +84,12 @@
                     const notice = childSnapshot.val();
             const li = document.createElement('li');
             const a = document.createElement('a');
+            const hr = document.createElement('hr');
             a.href = "#";
             a.textContent = notice;
             li.appendChild(a);
             noticesList.appendChild(li);
+            noticesList.appendChild(hr);
                 });
                  if (hasNotices) {
             noticesContainer.style.display = 'block';
