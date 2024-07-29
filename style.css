@@ -129,6 +129,9 @@ nav ul li a:hover::after {
     border-top-right-radius: 10px;
     overflow: hidden;
 }
+#notice-area{
+overflow:hidden;
+}
 
 #notice-list {
     display: block;
