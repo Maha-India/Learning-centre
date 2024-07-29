@@ -7,7 +7,7 @@
     <meta name="description" content="Looking for top-notch tuition services in Dumdum, Kolkata? Tripti Tuition Centre offers personalized coaching for Mathematics, English, Hindi, Economics, Commerce and Business Studies. Join us to excel in your academics.">
     <meta name="keywords" content="tuition, education, Mathematics, Statistics, Commerce, Business Studies, Economics, Hindi, English">
     <meta name="author" content="Tripti Tution Centre">
-    <link rel="stylesheet" href="style.css">
+    <link id="styling" rel="stylesheet" href="style.css">
     <link rel="canonical" href="https://www.tripti.netlify.app/index.html">
     <link rel="icon" href="/faviconnn.png">
     <!--Open Graph Meta Tags-->
@@ -92,6 +92,9 @@
                 });
                  if (hasNotices) {
             noticesContainer.style.display = 'block';
+            var link = document.getElementById('styling');
+            var newHref = link.href.split('?')[0] + '?' + new Date().getTime();
+            link.href = newHref;
         } else {
             noticesContainer.style.display = 'none';
         }
