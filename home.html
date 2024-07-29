@@ -100,6 +100,16 @@
     </script>
 </head>
 <body>
+    <style>
+        @keyframes marquee {
+            from {
+                bottom: -100%;
+            }
+            to {
+                bottom: 100%;
+            }
+        }
+            </style>
     <header>
         <div class="logo">
        <img src="/logo14.webp" alt="Tripti Tution Centre Logo" style="aspect-ratio:0.95;">
@@ -130,7 +140,7 @@
     <h2>Notices</h2>
         <div id="notice-area">
           <hr style="border-top:1px dashed black;">
-          <ul id="notice-list"></ul>
+          <ul id="notice-list" style="animation:marquee 10s linear infinite;"></ul>
         </div>
     </div>
     <section id="subjects">
