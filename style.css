@@ -128,9 +128,13 @@ nav ul li a:hover::after {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     overflow: hidden;
+	width:99vw
 }
 #notice-area{
-height: calc(100% - 55px);
+  position: absolute;
+  bottom: 0; /* Pin to the bottom of the parent */
+  height: calc(100% - 55px); /* Set height to 55px less than the parent's height */
+  width: 100%; 
 overflow:hidden;
 }
 
