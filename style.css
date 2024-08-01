@@ -10,6 +10,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+	overflow-x:hidden;
 }
 
 header {
@@ -116,7 +117,7 @@ nav ul li a:hover::after {
     position: relative; /* To contain the absolute positioned element */
     height: 200px; /* Set a fixed height to contain the scrolling content */
     overflow: hidden; /* Hide overflow to only show the scrolling content */
-     width:99vw;
+     width:100%;
 }
 
 #notices-container h2 {
@@ -134,7 +135,7 @@ nav ul li a:hover::after {
   position: absolute;
   bottom: 0; /* Pin to the bottom of the parent */
   height: calc(100% - 55px); /* Set height to 55px less than the parent's height */
-  width: 100%; 
+  width: 99%; 
 	left:0;
 overflow:hidden;
 }
@@ -144,7 +145,7 @@ overflow:hidden;
     white-space: nowrap;
     animation: marquee 10s linear infinite;
     position: absolute;
-    width: 100%; /* Full width to make it fit the container */
+    width: 98%; /* Full width to make it fit the container */
     margin: 0;
     padding: 0;
     list-style-type: none;
